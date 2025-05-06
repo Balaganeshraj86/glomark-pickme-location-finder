@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glomark Store Locator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Glomark Logo" class="logo" onerror="this.src='https://i.postimg.cc/C5Lk2Kvf/Glomark-Logo-White-Version.png'">
+        <h1>Select Your Store Location</h1>
+        
+        <div class="location-message" id="location-message">
+            <span id="location-status">Detecting your location...</span>
+        </div>
+        
+        <div id="store-buttons">
+            <a href="https://pickme-app-sl.onelink.me/Fore/dnioisdm" target="_blank" id="store-wattala"><button>Glomark Wattala</button></a>
+            <a href="https://pickme-app-sl.onelink.me/Fore/zqrsl2gt" target="_blank" id="store-kandy"><button>Glomark Kandy</button></a>
+            <a href="https://pickme-app-sl.onelink.me/Fore/05mrj3b8" target="_blank" id="store-kandana"><button>Glomark Kandana</button></a>
+            <a href="https://pickme-app-sl.onelink.me/Fore/oid1ckdn" target="_blank" id="store-thalawathugoda"><button>Glomark Thalawathugoda</button></a>
+            <a href="https://pickme-app-sl.onelink.me/Fore/ebhcbuwq" target="_blank" id="store-negombo"><button>Glomark Negombo</button></a>
+            <a href="https://pickme-app-sl.onelink.me/Fore/wtnte2nz" target="_blank" id="store-kurunegala"><button>Glomark Kurunegala</button></a>
+            <a href="https://pickme-app-sl.onelink.me/Fore/8plnm8n4" target="_blank" id="store-kottawa"><button>Glomark Kottawa</button></a>
+            <a href="https://pickme-app-sl.onelink.me/Fore/u4aoucpq" target="_blank" id="store-mtlavinia"><button>Glomark Mount Lavinia</button></a>
+            <a href="https://pickme-app-sl.onelink.me/Fore/1jzq2q5z" target="_blank" id="store-nawala"><button>Glomark Nawala</button></a>
+        </div>
+    </div>
+
+    <div id="nearby-stores-count">0</div>
+
+    <div id="nearby-popup">
+        <h2>Stores Near You</h2>
+        <ul id="nearby-stores-list">
+            <!-- Nearby stores will be listed here -->
+        </ul>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <div id="loader">
+        <div class="loader-icon">🛒</div>
+        <div>Finding nearest store...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
